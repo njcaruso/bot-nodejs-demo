@@ -90,3 +90,19 @@ We'll be using `api.ai`
   - `search for the most viewed videos about cats`
 
 To run you'll now need to provide the api.ai oauth token environment variable as `aiToken` so the command will be `export aiToken=xxx &&& export slackToken=yyy &&& export youtubeToken=zzz &&& npm run dev` where xxx, yyy and zzz are the appropriate token/keys.
+
+## Stage 5
+### git branch `stage-5-conversations`
+
+This is a continuation from Stage 4, and now adds the concept of an interactive conversation.
+
+### Prerequisites
+- Update the agent in api.ai and in the `search` `Intent` require the actions of `term`, `duration` and `order`.  This will invoke a conversation with the bot if it does not have those fields.
+
+### Testing
+- The Slack user can type:
+  - `search for videos about cats`.  This should then stage "how much time do you have?"
+  - `not much`. The bot should then ask "What sort order do you want that?"
+  - `most viewed`.  Then the bot should return results
+
+Follow the same steps in Stage 4 to run.
