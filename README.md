@@ -21,11 +21,15 @@ This is a continuation from Stage 1, but introduces
 - Howdy Botkit
 - A very basic interaction
 
-Get a demo token here: https://api.slack.com/docs/oauth-test-tokens
+Create a bot by going here:
+https://{YOUR TEAM ID}.slack.com/apps/build/custom-integration
 
-To run type `npm run dev` however, you'll need environment variables for:
-- YouTube
-- API.ai
-- Slack
+This is a CUSTOM bot, and not intended for public dissemination.  A public bot requires public registration, and is outside the scope of this project.
 
-So you'll probably need to type in `export aiToken=xxx && export slackToken=yyy && export youtubeToken=zzz && npm run dev` where x y and z are appropriate token/keys
+Get the OAUTH token that may look like xoxb-1234567...
+
+NodeJS will expect this token under the environment variable slackToken.
+
+To run type `npm run dev` however, you'll need environment variables for the Slack Token.
+
+So you'll probably need to type in `export export slackToken=yyy && npm run dev` where yyy is the appropriate token/keys
