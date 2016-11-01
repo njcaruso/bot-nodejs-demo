@@ -23,7 +23,10 @@ This is a continuation from Stage 1, but introduces
 - Howdy Botkit
 - A very basic interaction
 
-Create a bot by going here:
+### Prerequisites
+- `npm i botkit --save` (or if in branch, `npm update`).  This is the botkit framework to make it easy to interface with Slack.
+- Create a Spark account/team
+- Create a bot by going here:
 https://{YOUR TEAM ID}.slack.com/apps/build/custom-integration
 
 This is a CUSTOM bot, and not intended for public dissemination.  A public bot requires public registration, and is outside the scope of this project.
@@ -31,6 +34,10 @@ This is a CUSTOM bot, and not intended for public dissemination.  A public bot r
 Get the OAUTH token that may look like xoxb-1234567...
 
 NodeJS will expect this token under the environment variable slackToken.
+
+### Testing
+- The Slack user can type:
+  - `Hi`, and the bot returns `hello`
 
 To run type `npm run dev` however, you'll need environment variables for the Slack Token.
 
