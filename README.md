@@ -1,11 +1,14 @@
 # bot-nodejs-demo
 Demo of building a chatbot "bot" with NodeJS
 
-Get a demo token here: https://api.slack.com/docs/oauth-test-tokens
+## Stage 1
+### git branch `stage-1-base-nodejs`
+This is just the barebones structure for a Restify config to work with MS Azure
 
-To run type `npm run dev` however, you'll need environment variables for:
-- YouTube
-- API.ai
-- Slack
+You can test this by running
+`npm run dev`
 
-So you'll probably need to type in `export aiToken=xxx && export slackToken=yyy && export youtubeToken=zzz && npm run dev` where x y and z are appropriate token/keys
+and then navigating to `http://localhost:8080/echo/test`, you should then see in your browser:
+```
+{"name": "test"}
+```

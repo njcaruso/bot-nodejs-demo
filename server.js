@@ -1,7 +1,5 @@
 var restify = require('restify');
 
-var botController = require('./lib/botControllers');
-
 var server = restify.createServer({
   name: 'bot-nodejs-demo',
   version: '1.0.0',
@@ -20,6 +18,5 @@ server.get('/echo/:name', function (req, res, next) {
 var port = process.env.PORT || 8080; // azure will specify port
 
 server.listen(port, function() {
-  botController.start();
   console.log('%s listening at %s', server.name, server.url);
 });
