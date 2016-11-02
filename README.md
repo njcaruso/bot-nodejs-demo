@@ -1,6 +1,8 @@
 # bot-nodejs-demo
 Demo of building a chatbot "bot" with NodeJS
 
+An accompanying presentation is in the folder `\presentation\20161101 - Bots.pptx`
+
 *Be sure to run `npm update` to ensure the latest dependent libraries are updated.*
 
 ## Stage 1
