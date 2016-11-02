@@ -100,7 +100,7 @@ This is a continuation from Stage 4, and now adds the concept of an interactive 
 - Update the agent in api.ai and in the `search` `Intent` require the actions of `term`, `duration` and `order`.  This will invoke a conversation with the bot if it does not have those fields.
 
 ### Testing
-- The Slack user can type:
+- To test the conversation first type the word `advanced`, that triggers the code to have a conversation:
   - `search for videos about cats`.  This should then stage "how much time do you have?"
   - `not much`. The bot should then ask "What sort order do you want that?"
   - `most viewed`.  Then the bot should return results
