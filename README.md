@@ -27,7 +27,7 @@ This is a continuation from Stage 1, but introduces
 
 ### Prerequisites
 - `npm i botkit --save` (or if in branch, `npm update`).  This is the botkit framework to make it easy to interface with Slack.
-- Create a Spark account/team
+- Create a Slack account/team
 - Create a bot by going here:
 https://{YOUR TEAM ID}.slack.com/apps/build/custom-integration
 
